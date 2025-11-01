@@ -1,4 +1,4 @@
-module shibuyashell
+module github.com/mrtokyo33/shibuya-shell
 
 go 1.23
 

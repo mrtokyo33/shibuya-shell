@@ -1,0 +1,50 @@
+.titlebar {
+    height: 32px;
+    background: #1e1e1e;
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    --wails-draggable: drag;
+}
+
+.titlebar-logo {
+    color: #f9fafb;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.titlebar-controls {
+    position: absolute;
+    left: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    --wails-draggable: no-drag;
+}
+
+.titlebar-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.btn-close { 
+    background-color: #ff5f57; 
+}
+
+.btn-minimise { 
+    background-color: #ffbd2e; 
+}
+
+.btn-maximise { 
+    background-color: #28c940; 
+}

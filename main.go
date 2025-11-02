@@ -15,11 +15,21 @@ func main() {
 	// Create an instance of the app structure
 	app := NewApp()
 
+	windowWidth := 1280
+	windowHeight := 720
+
+	app.WindowWidth = windowWidth
+	app.WindowHeight = windowHeight
+
 	// Create application with options
 	err := wails.Run(&options.App{
-		Title:  "shibuyashell",
-		Width:  1024,
-		Height: 768,
+		Title:  "Shibuya Shell",
+		Width:  windowWidth,
+		Height: windowHeight,
+
+		Frameless: true,
+		DisableResize: false,
+
 		AssetServer: &assetserver.Options{
 			Assets: assets,
 		},

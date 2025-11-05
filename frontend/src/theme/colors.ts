@@ -2,6 +2,8 @@ export const colors = {
   background: {
     abyss: '#0D0D0F',
     glass: 'rgba(25, 26, 30, 0.5)',
+    primary: '#0D0D0F',
+    secondary: 'rgba(25, 26, 30, 0.8)',
   },
   glass: {
     border: 'rgba(255, 255, 255, 0.1)',

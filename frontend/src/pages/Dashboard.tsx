@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 import { colors } from '../theme/colors'
+import { FiSettings } from 'react-icons/fi'
 
 export function Dashboard() {
     const navigate = useNavigate()
@@ -78,11 +79,7 @@ export function Dashboard() {
                     e.currentTarget.style.boxShadow = 'none'
                 }}
             >
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <circle cx="12" cy="12" r="3"></circle>
-                    <path d="M12 1v6m0 6v6m9-9h-6m-6 0H3"></path>
-                    <path d="M19.07 4.93l-4.24 4.24m-5.66 0L4.93 4.93m14.14 14.14l-4.24-4.24m-5.66 0l-4.24 4.24"></path>
-                </svg>
+                {FiSettings({ size: 24 })}
             </button>
 
             <h1 style={{
